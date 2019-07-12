@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1095509415983",
+    "firebase_url": "https://tripmanager-701e3.firebaseio.com",
+    "project_id": "tripmanager-701e3",
+    "storage_bucket": "tripmanager-701e3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095509415983:android:af08863c8099d060",
+        "android_client_info": {
+          "package_name": "com.example.android.tripmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095509415983-flqlb1i82u9hi664bb52la65u4j28knt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQwcWOsxo1WThr-u2WWVtNrSiKDLPYXfo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095509415983-flqlb1i82u9hi664bb52la65u4j28knt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

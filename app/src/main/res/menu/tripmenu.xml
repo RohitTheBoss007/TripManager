@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/addmem"
+        android:title="addmem"
+        android:icon="@drawable/ic_group_add"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/addexpense"
+        android:title="Add expense"/>
+
+    <item
+        android:id="@+id/places"
+        android:title="Recommended Places"/>
+
+    <item
+        android:id="@+id/rec"
+        android:title="Recommendations"/>
+
+
+    <item
+        android:id="@+id/pictures"
+        android:title="Pictures"/>
+    <item
+        android:id="@+id/groupchat"
+        android:title="Group Chat"/>
+    <item
+        android:id="@+id/leave"
+        android:title="Leave Group"/>
+
+    <item
+        android:id="@+id/searchmem"
+        android:title="Search"
+        android:icon="@drawable/ic_search_white"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+
+
+</menu>

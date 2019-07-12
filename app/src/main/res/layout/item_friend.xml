@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:padding="16dp"
+    app:cardBackgroundColor="#FFA117"
+    app:cardElevation="10dp"
+    android:id="@+id/cv">
+
+    <LinearLayout
+    android:id="@+id/llfriend"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    >
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/dp"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:src="@drawable/profilepic"
+        android:background="@drawable/circle"
+        android:layout_weight="2"/>
+
+    <TextView
+        android:id="@+id/tvFriend"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Friend Name"
+        android:textColor="@color/accent"
+        android:textSize="24sp" />
+    <ImageButton
+        android:id="@+id/call"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:background="#FFA117"
+            android:src="@drawable/ic_phone"/>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
