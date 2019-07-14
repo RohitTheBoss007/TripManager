@@ -1,9 +1,8 @@
-package com.example.android.tripmanager;
+package com.example.android.tripmanager.Adapter;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Color;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
@@ -20,6 +19,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.android.tripmanager.Common;
+import com.example.android.tripmanager.R;
+import com.example.android.tripmanager.TripActivity;
+import com.example.android.tripmanager.User;
 import com.google.firebase.database.DatabaseReference;
 
 import java.util.ArrayList;

@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/F:/Andriod%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/maps/ic_add_location_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/F:/Andriod%20Studio/plugins/android/lib/android.jar!/images/material_design_icons/maps/ic_edit_location_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,9 +28,9 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="5ffcff" />
+                            <entry key="color" value="c3ffd0" />
                             <entry key="height" value="30" />
-                            <entry key="outputName" value="ic_add_location" />
+                            <entry key="outputName" value="ic_edit_location" />
                             <entry key="overrideSize" value="true" />
                             <entry key="sourceFile" value="C:\Users\ROHIT" />
                             <entry key="width" value="30" />

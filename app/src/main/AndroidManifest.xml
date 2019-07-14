@@ -23,7 +23,12 @@
         <activity android:name=".GroupChatActivity" />
         <activity android:name=".TripActivity" />
         <activity android:name=".FindFriends" />
-        <activity android:name=".Places"></activity>
+        <activity android:name=".Places" />
+        <activity android:name=".PicturesActivity" />
+        <activity android:name=".AddPics" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".ExpenseActivity" />
+        <activity android:name=".AddExpense"></activity>
     </application>
 
 </manifest>

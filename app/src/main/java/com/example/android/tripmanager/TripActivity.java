@@ -15,6 +15,7 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.example.android.tripmanager.Adapter.MemberAdapter;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -45,12 +46,12 @@ public class TripActivity extends AppCompatActivity {
         Intent intent = getIntent();
         TripName = intent.getStringExtra("Trip");
         creator = intent.getStringExtra("Creator");
-        Log.d("ggggg", creator);
+        getSupportActionBar().setTitle(TripName);
         ImageView img=findViewById(R.id.img1);
         Glide.with(this).load("https://images.pexels.com/photos/2279226/pexels-photo-2279226.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500").into(img);
         img.setScaleType(ImageView.ScaleType.FIT_XY);
 
-        }
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -84,12 +85,33 @@ public class TripActivity extends AppCompatActivity {
                 startActivity(new Intent(TripActivity.this,GroupChatActivity.class));
                 return true;
             case R.id.places:
-                startActivity(new Intent(TripActivity.this,Places.class));
+                Intent intent=new Intent(this,Places.class);
+                intent.putExtra("TripName",TripName);
+                startActivity(intent);
                 return true;
+            case R.id.pictures:
+                Intent i=new Intent(this,PicturesActivity.class);
+                i.putExtra("TripName",TripName);
+                startActivity(i);
+                return true;
+            case R.id.addexpense:
+                Intent k=new Intent(this,ExpenseActivity.class);
+                k.putExtra("TripName",TripName);
+                startActivity(k);
+                return true;
+            case R.id.logout2:
+                Intent u=new Intent(TripActivity.this,MainActivity.class);
+                u.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(u);
+                finish();
+                return true;
+
+
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
+
 
     private void addMem() {
         Intent i = new Intent(this, FindFriends.class);
@@ -266,4 +288,5 @@ public class TripActivity extends AppCompatActivity {
             }
         });
     }
+
 }

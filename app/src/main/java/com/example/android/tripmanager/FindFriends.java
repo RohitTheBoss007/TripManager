@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.android.tripmanager.Adapter.FriendAdapter;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -36,6 +37,7 @@ public class FindFriends extends AppCompatActivity {
         setContentView(R.layout.activity_find_friends);
         Toolbar toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Add Member");
         database=FirebaseDatabase.getInstance();
         rvFriends=findViewById(R.id.rvFind);
         ImageView img=findViewById(R.id.img2);
@@ -82,8 +84,8 @@ public class FindFriends extends AppCompatActivity {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
 
-                    User name = dataSnapshot.getValue(User.class);
-                    friends.add(name);
+                User name = dataSnapshot.getValue(User.class);
+                friends.add(name);
 
 
                 displayFriends(friends);
@@ -93,10 +95,10 @@ public class FindFriends extends AppCompatActivity {
             public void onChildChanged(DataSnapshot dataSnapshot, String s) {
                 List<User>newNames=new ArrayList<>();
 
-                    User name = dataSnapshot.getValue(User.class);
-                    newNames.add(name);
-                    friends=newNames;
-                    displayFriends(friends);
+                User name = dataSnapshot.getValue(User.class);
+                newNames.add(name);
+                friends=newNames;
+                displayFriends(friends);
 
 
             }
@@ -105,10 +107,10 @@ public class FindFriends extends AppCompatActivity {
             public void onChildRemoved(DataSnapshot dataSnapshot) {
                 List<User>newNames=new ArrayList<>();
 
-                    User name = dataSnapshot.getValue(User.class);
-                    newNames.add(name);
-                    friends=newNames;
-                    displayFriends(friends);
+                User name = dataSnapshot.getValue(User.class);
+                newNames.add(name);
+                friends=newNames;
+                displayFriends(friends);
 
 
             }

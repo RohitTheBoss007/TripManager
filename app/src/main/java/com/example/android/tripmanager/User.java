@@ -1,5 +1,8 @@
 package com.example.android.tripmanager;
-public class User {
+
+import java.io.Serializable;
+
+public class User implements Serializable {
     private String username,password,email,mobile,address,picUrl;
     public User(){}
 

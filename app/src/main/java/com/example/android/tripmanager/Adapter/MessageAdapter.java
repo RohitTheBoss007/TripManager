@@ -1,4 +1,4 @@
-package com.example.android.tripmanager;
+package com.example.android.tripmanager.Adapter;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -12,6 +12,9 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.android.tripmanager.ChatMessage;
+import com.example.android.tripmanager.Common;
+import com.example.android.tripmanager.R;
 import com.google.firebase.database.DatabaseReference;
 
 import java.util.List;

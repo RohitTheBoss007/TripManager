@@ -1,4 +1,4 @@
-package com.example.android.tripmanager;
+package com.example.android.tripmanager.Adapter;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -13,6 +13,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.android.tripmanager.R;
 import com.google.firebase.database.DatabaseReference;
 
 import java.util.ArrayList;

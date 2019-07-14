@@ -15,19 +15,14 @@
         android:title="Recommended Places"/>
 
     <item
-        android:id="@+id/rec"
-        android:title="Recommendations"/>
-
-
-    <item
         android:id="@+id/pictures"
         android:title="Pictures"/>
     <item
         android:id="@+id/groupchat"
         android:title="Group Chat"/>
     <item
-        android:id="@+id/leave"
-        android:title="Leave Group"/>
+        android:id="@+id/logout2"
+        android:title="Logout"/>
 
     <item
         android:id="@+id/searchmem"

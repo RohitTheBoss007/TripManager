@@ -2,6 +2,7 @@ package com.example.android.tripmanager;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -12,14 +13,13 @@ import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.inputmethod.EditorInfo;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.example.android.tripmanager.Adapter.TripAdapter;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -32,7 +32,7 @@ import java.util.List;
 
 public class Final extends AppCompatActivity  {
     FirebaseDatabase db;
-    DatabaseReference tripDb,ref;
+    DatabaseReference tripDb;
     TripAdapter tripAdapter;
     List<Trip> trips=new ArrayList<>();
     RecyclerView rvTrip;
@@ -81,6 +81,20 @@ public class Final extends AppCompatActivity  {
             case R.id.add:
                 addTrip();
                 return true;
+            case R.id.about:
+                startActivity(new Intent(Final.this,AboutActivity.class));
+                return true;
+            case R.id.logout:
+                onBackPressed();
+                return true;
+            case R.id.share:
+                Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                shareIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                shareIntent.setType("text/plain");
+                shareIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Hey, download this app!");
+                startActivity(shareIntent);
+            case R.id.faq:
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://tripsource.com/faq/")));
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -103,7 +117,7 @@ public class Final extends AppCompatActivity  {
                     Toast.makeText(Final.this, "Trip Created Successfully ", Toast.LENGTH_SHORT).show();
                 }
                 else
-                Toast.makeText(getApplicationContext(), "Cannot create empty trip", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Cannot create empty trip", Toast.LENGTH_SHORT).show();
             }
         });
         builder.setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
@@ -114,6 +128,12 @@ public class Final extends AppCompatActivity  {
         });
         builder.show();
 
+    }
+
+    @Override
+    public void onBackPressed() {
+
+        finish();
     }
 
     @Override
@@ -142,7 +162,7 @@ public class Final extends AppCompatActivity  {
                     if(t.getTripKey().equals(trip.getTripKey()))
                         newTrips.add(trip);
                     else
-                         newTrips.add(t);
+                        newTrips.add(t);
                 }
                 trips=newTrips;
                 displayTrips(trips);
@@ -186,5 +206,4 @@ public class Final extends AppCompatActivity  {
     }
 
 
-    }
-
+}
