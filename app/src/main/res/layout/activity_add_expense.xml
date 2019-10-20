@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".AddPics">
+
+    <Button
+        android:id="@+id/button_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Choose Receipt" />
+
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/button_choose"
+        android:hint="Enter Description"
+        android:layout_toRightOf="@+id/button_choose"
+        android:layout_marginLeft="16dp" />
+
+    <ImageView
+        android:id="@+id/rimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bar"
+        android:layout_below="@id/et_cost"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/elephant"
+          />
+
+    <ProgressBar
+        android:id="@+id/bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/upload"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Upload" />
+
+    <TextView
+        android:id="@+id/tv_show_uploads"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/upload"
+        android:layout_alignTop="@+id/upload"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@+id/upload"
+        android:gravity="center"
+        android:text="Show Uploads"
+        android:textSize="16sp"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/upload" />
+
+    <EditText
+        android:id="@+id/et_cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="69dp"
+        android:layout_toEndOf="@+id/button_choose"
+        android:hint="Enter Cost"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/button_choose" />
+
+</RelativeLayout>

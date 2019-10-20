@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.anyoutdroid.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Final"
+
+    android:id="@+id/drawer">
+    <ImageView
+        android:id="@+id/imgbackx"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/xtoolbar"></include>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvxp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="0dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>

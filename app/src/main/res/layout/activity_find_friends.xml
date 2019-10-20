@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Final"
+    tools:context=".FindFriends"
 
     android:id="@+id/drawer">
     <ImageView
@@ -17,10 +17,12 @@
 
     <include
         layout="@layout/toolbar"
-        android:id="@+id/toolbar"></include>
+        android:id="@+id/toolbar">
+
+    </include>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rvFind"
+        android:id="@+id/rvAllUsers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"

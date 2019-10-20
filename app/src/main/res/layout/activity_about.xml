@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="#FFA724">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView android:src="@drawable/tripman"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREDITS"
+
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="#2328FF"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Created By: Rohit Pal"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="italic"
+            android:textColor="#2328FF"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Project Supervisor: Madhav Shah "
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textStyle="italic"
+            android:textColor="#2328FF"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Special Thanks: WIX Logo Designer"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:textStyle="italic"
+            android:textColor="#2328FF"
+            android:textSize="18sp"/>
+
+
+    </LinearLayout>
+</ScrollView>

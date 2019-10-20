@@ -39,7 +39,7 @@ public class FindFriends extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Add Member");
         database=FirebaseDatabase.getInstance();
-        rvFriends=findViewById(R.id.rvFind);
+        rvFriends=findViewById(R.id.rvAllUsers);
         ImageView img=findViewById(R.id.img2);
         Glide.with(this).load("https://images.pexels.com/photos/955798/pexels-photo-955798.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500").into(img);
         img.setScaleType(ImageView.ScaleType.FIT_XY);
