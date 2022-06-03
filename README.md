@@ -1,6 +1,5 @@
 # TripManager
-This project was a part of *ACM league of codes*, a project building competition of sophomores at IIT Dhanbad.
-This is a fun application that lets its users efficiently manage their trip plans,suggest/review posible locations of visits , upload transcipts of expences and easily ditribute it among themselves,There is also group chat and one-on one chat features with support of audio messages.
+This project was a part of the *ACM league of codes*, a project-building competition for sophomores at IIT Dhanbad. This is a fun application that lets its users efficiently manage their trip plans, suggest/review possible locations of visits, upload transcripts of expenses and easily distribute them among themselves, There is also group chat and one-on-one chat features with support of audio messages.
 
 ## Screenshots
 
